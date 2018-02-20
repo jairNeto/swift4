@@ -1,0 +1,640 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD2F5AB3201E21EE000A1D9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2F5AB2201E21EE000A1D9E /* AppDelegate.swift */; };
+		CD2F5AB8201E21EE000A1D9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD2F5AB6201E21EE000A1D9E /* Main.storyboard */; };
+		CD2F5ABB201E21EE000A1D9E /* Pensamentos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CD2F5AB9201E21EE000A1D9E /* Pensamentos.xcdatamodeld */; };
+		CD2F5ABD201E21EE000A1D9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD2F5ABC201E21EE000A1D9E /* Assets.xcassets */; };
+		CD2F5AC0201E21EE000A1D9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD2F5ABE201E21EE000A1D9E /* LaunchScreen.storyboard */; };
+		CD2F5ACB201E21EE000A1D9E /* PensamentosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2F5ACA201E21EE000A1D9E /* PensamentosTests.swift */; };
+		CD2F5AD6201E21EE000A1D9E /* PensamentosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2F5AD5201E21EE000A1D9E /* PensamentosUITests.swift */; };
+		CD2F5AEB201F5D42000A1D9E /* QuotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2F5AEA201F5D42000A1D9E /* QuotesViewController.swift */; };
+		CD2F5AED201F5D6C000A1D9E /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2F5AEC201F5D6C000A1D9E /* SettingsViewController.swift */; };
+		CD2F5AF1201F5FED000A1D9E /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2F5AF0201F5FED000A1D9E /* Quote.swift */; };
+		CD2F5AF3201F6010000A1D9E /* QuotesManeger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2F5AF2201F6010000A1D9E /* QuotesManeger.swift */; };
+		CD2F5AF5201F6026000A1D9E /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2F5AF4201F6026000A1D9E /* Configuration.swift */; };
+		CD2F5AF7201F63F1000A1D9E /* quotes.json in Resources */ = {isa = PBXBuildFile; fileRef = CD2F5AE8201E22EA000A1D9E /* quotes.json */; };
+		CD2F5AF8201F641F000A1D9E /* Savoye LET.ttc in Resources */ = {isa = PBXBuildFile; fileRef = CD2F5AE9201E22ED000A1D9E /* Savoye LET.ttc */; };
+		CD446E2E201FE312006A7994 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CD446E2D201FE312006A7994 /* Settings.bundle */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CD2F5AC7201E21EE000A1D9E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD2F5AA7201E21ED000A1D9E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD2F5AAE201E21ED000A1D9E;
+			remoteInfo = Pensamentos;
+		};
+		CD2F5AD2201E21EE000A1D9E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD2F5AA7201E21ED000A1D9E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD2F5AAE201E21ED000A1D9E;
+			remoteInfo = Pensamentos;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CD2F5AAF201E21ED000A1D9E /* Pensamentos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pensamentos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD2F5AB2201E21EE000A1D9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CD2F5AB7201E21EE000A1D9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CD2F5ABA201E21EE000A1D9E /* Pensamentos.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Pensamentos.xcdatamodel; sourceTree = "<group>"; };
+		CD2F5ABC201E21EE000A1D9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CD2F5ABF201E21EE000A1D9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CD2F5AC1201E21EE000A1D9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD2F5AC6201E21EE000A1D9E /* PensamentosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PensamentosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD2F5ACA201E21EE000A1D9E /* PensamentosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PensamentosTests.swift; sourceTree = "<group>"; };
+		CD2F5ACC201E21EE000A1D9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD2F5AD1201E21EE000A1D9E /* PensamentosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PensamentosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD2F5AD5201E21EE000A1D9E /* PensamentosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PensamentosUITests.swift; sourceTree = "<group>"; };
+		CD2F5AD7201E21EE000A1D9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD2F5AE8201E22EA000A1D9E /* quotes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = quotes.json; sourceTree = "<group>"; };
+		CD2F5AE9201E22ED000A1D9E /* Savoye LET.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Savoye LET.ttc"; sourceTree = "<group>"; };
+		CD2F5AEA201F5D42000A1D9E /* QuotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesViewController.swift; sourceTree = "<group>"; };
+		CD2F5AEC201F5D6C000A1D9E /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		CD2F5AF0201F5FED000A1D9E /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
+		CD2F5AF2201F6010000A1D9E /* QuotesManeger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesManeger.swift; sourceTree = "<group>"; };
+		CD2F5AF4201F6026000A1D9E /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		CD446E2D201FE312006A7994 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Settings.bundle; path = Pensamentos/Settings.bundle; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD2F5AAC201E21ED000A1D9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD2F5AC3201E21EE000A1D9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD2F5ACE201E21EE000A1D9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD2F5AA6201E21ED000A1D9E = {
+			isa = PBXGroup;
+			children = (
+				CD2F5AB1201E21ED000A1D9E /* Pensamentos */,
+				CD2F5AC9201E21EE000A1D9E /* PensamentosTests */,
+				CD2F5AD4201E21EE000A1D9E /* PensamentosUITests */,
+				CD2F5AB0201E21ED000A1D9E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CD2F5AB0201E21ED000A1D9E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD2F5AAF201E21ED000A1D9E /* Pensamentos.app */,
+				CD2F5AC6201E21EE000A1D9E /* PensamentosTests.xctest */,
+				CD2F5AD1201E21EE000A1D9E /* PensamentosUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD2F5AB1201E21ED000A1D9E /* Pensamentos */ = {
+			isa = PBXGroup;
+			children = (
+				CD446E2D201FE312006A7994 /* Settings.bundle */,
+				CD2F5AEE201F5D87000A1D9E /* VC */,
+				CD2F5AEF201F5D9D000A1D9E /* views */,
+				CD2F5AF6201F603D000A1D9E /* Model */,
+				CD2F5AE7201E22E0000A1D9E /* Files */,
+				CD2F5AB2201E21EE000A1D9E /* AppDelegate.swift */,
+				CD2F5ABC201E21EE000A1D9E /* Assets.xcassets */,
+				CD2F5AC1201E21EE000A1D9E /* Info.plist */,
+				CD2F5AB9201E21EE000A1D9E /* Pensamentos.xcdatamodeld */,
+			);
+			path = Pensamentos;
+			sourceTree = "<group>";
+		};
+		CD2F5AC9201E21EE000A1D9E /* PensamentosTests */ = {
+			isa = PBXGroup;
+			children = (
+				CD2F5ACA201E21EE000A1D9E /* PensamentosTests.swift */,
+				CD2F5ACC201E21EE000A1D9E /* Info.plist */,
+			);
+			path = PensamentosTests;
+			sourceTree = "<group>";
+		};
+		CD2F5AD4201E21EE000A1D9E /* PensamentosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CD2F5AD5201E21EE000A1D9E /* PensamentosUITests.swift */,
+				CD2F5AD7201E21EE000A1D9E /* Info.plist */,
+			);
+			path = PensamentosUITests;
+			sourceTree = "<group>";
+		};
+		CD2F5AE7201E22E0000A1D9E /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD2F5AE9201E22ED000A1D9E /* Savoye LET.ttc */,
+				CD2F5AE8201E22EA000A1D9E /* quotes.json */,
+			);
+			path = Files;
+			sourceTree = "<group>";
+		};
+		CD2F5AEE201F5D87000A1D9E /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				CD2F5AEC201F5D6C000A1D9E /* SettingsViewController.swift */,
+				CD2F5AEA201F5D42000A1D9E /* QuotesViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		CD2F5AEF201F5D9D000A1D9E /* views */ = {
+			isa = PBXGroup;
+			children = (
+				CD2F5AB6201E21EE000A1D9E /* Main.storyboard */,
+				CD2F5ABE201E21EE000A1D9E /* LaunchScreen.storyboard */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		CD2F5AF6201F603D000A1D9E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CD2F5AF0201F5FED000A1D9E /* Quote.swift */,
+				CD2F5AF2201F6010000A1D9E /* QuotesManeger.swift */,
+				CD2F5AF4201F6026000A1D9E /* Configuration.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD2F5AAE201E21ED000A1D9E /* Pensamentos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD2F5ADA201E21EE000A1D9E /* Build configuration list for PBXNativeTarget "Pensamentos" */;
+			buildPhases = (
+				CD2F5AAB201E21ED000A1D9E /* Sources */,
+				CD2F5AAC201E21ED000A1D9E /* Frameworks */,
+				CD2F5AAD201E21ED000A1D9E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pensamentos;
+			productName = Pensamentos;
+			productReference = CD2F5AAF201E21ED000A1D9E /* Pensamentos.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CD2F5AC5201E21EE000A1D9E /* PensamentosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD2F5ADD201E21EE000A1D9E /* Build configuration list for PBXNativeTarget "PensamentosTests" */;
+			buildPhases = (
+				CD2F5AC2201E21EE000A1D9E /* Sources */,
+				CD2F5AC3201E21EE000A1D9E /* Frameworks */,
+				CD2F5AC4201E21EE000A1D9E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD2F5AC8201E21EE000A1D9E /* PBXTargetDependency */,
+			);
+			name = PensamentosTests;
+			productName = PensamentosTests;
+			productReference = CD2F5AC6201E21EE000A1D9E /* PensamentosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CD2F5AD0201E21EE000A1D9E /* PensamentosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD2F5AE0201E21EE000A1D9E /* Build configuration list for PBXNativeTarget "PensamentosUITests" */;
+			buildPhases = (
+				CD2F5ACD201E21EE000A1D9E /* Sources */,
+				CD2F5ACE201E21EE000A1D9E /* Frameworks */,
+				CD2F5ACF201E21EE000A1D9E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD2F5AD3201E21EE000A1D9E /* PBXTargetDependency */,
+			);
+			name = PensamentosUITests;
+			productName = PensamentosUITests;
+			productReference = CD2F5AD1201E21EE000A1D9E /* PensamentosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD2F5AA7201E21ED000A1D9E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Pay Back $istemas";
+				TargetAttributes = {
+					CD2F5AAE201E21ED000A1D9E = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					CD2F5AC5201E21EE000A1D9E = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CD2F5AAE201E21ED000A1D9E;
+					};
+					CD2F5AD0201E21EE000A1D9E = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CD2F5AAE201E21ED000A1D9E;
+					};
+				};
+			};
+			buildConfigurationList = CD2F5AAA201E21ED000A1D9E /* Build configuration list for PBXProject "Pensamentos" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CD2F5AA6201E21ED000A1D9E;
+			productRefGroup = CD2F5AB0201E21ED000A1D9E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD2F5AAE201E21ED000A1D9E /* Pensamentos */,
+				CD2F5AC5201E21EE000A1D9E /* PensamentosTests */,
+				CD2F5AD0201E21EE000A1D9E /* PensamentosUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD2F5AAD201E21ED000A1D9E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD2F5AF7201F63F1000A1D9E /* quotes.json in Resources */,
+				CD2F5AC0201E21EE000A1D9E /* LaunchScreen.storyboard in Resources */,
+				CD2F5ABD201E21EE000A1D9E /* Assets.xcassets in Resources */,
+				CD2F5AF8201F641F000A1D9E /* Savoye LET.ttc in Resources */,
+				CD446E2E201FE312006A7994 /* Settings.bundle in Resources */,
+				CD2F5AB8201E21EE000A1D9E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD2F5AC4201E21EE000A1D9E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD2F5ACF201E21EE000A1D9E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD2F5AAB201E21ED000A1D9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD2F5AEB201F5D42000A1D9E /* QuotesViewController.swift in Sources */,
+				CD2F5AB3201E21EE000A1D9E /* AppDelegate.swift in Sources */,
+				CD2F5AF5201F6026000A1D9E /* Configuration.swift in Sources */,
+				CD2F5AED201F5D6C000A1D9E /* SettingsViewController.swift in Sources */,
+				CD2F5AF1201F5FED000A1D9E /* Quote.swift in Sources */,
+				CD2F5AF3201F6010000A1D9E /* QuotesManeger.swift in Sources */,
+				CD2F5ABB201E21EE000A1D9E /* Pensamentos.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD2F5AC2201E21EE000A1D9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD2F5ACB201E21EE000A1D9E /* PensamentosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD2F5ACD201E21EE000A1D9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD2F5AD6201E21EE000A1D9E /* PensamentosUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CD2F5AC8201E21EE000A1D9E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD2F5AAE201E21ED000A1D9E /* Pensamentos */;
+			targetProxy = CD2F5AC7201E21EE000A1D9E /* PBXContainerItemProxy */;
+		};
+		CD2F5AD3201E21EE000A1D9E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD2F5AAE201E21ED000A1D9E /* Pensamentos */;
+			targetProxy = CD2F5AD2201E21EE000A1D9E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CD2F5AB6201E21EE000A1D9E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD2F5AB7201E21EE000A1D9E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CD2F5ABE201E21EE000A1D9E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD2F5ABF201E21EE000A1D9E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CD2F5AD8201E21EE000A1D9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CD2F5AD9201E21EE000A1D9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD2F5ADB201E21EE000A1D9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6THA6469WJ;
+				INFOPLIST_FILE = Pensamentos/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jgfn.Pensamentos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		CD2F5ADC201E21EE000A1D9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6THA6469WJ;
+				INFOPLIST_FILE = Pensamentos/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jgfn.Pensamentos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		CD2F5ADE201E21EE000A1D9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6THA6469WJ;
+				INFOPLIST_FILE = PensamentosTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jgfn.PensamentosTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pensamentos.app/Pensamentos";
+			};
+			name = Debug;
+		};
+		CD2F5ADF201E21EE000A1D9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6THA6469WJ;
+				INFOPLIST_FILE = PensamentosTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jgfn.PensamentosTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pensamentos.app/Pensamentos";
+			};
+			name = Release;
+		};
+		CD2F5AE1201E21EE000A1D9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6THA6469WJ;
+				INFOPLIST_FILE = PensamentosUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jgfn.PensamentosUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Pensamentos;
+			};
+			name = Debug;
+		};
+		CD2F5AE2201E21EE000A1D9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6THA6469WJ;
+				INFOPLIST_FILE = PensamentosUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jgfn.PensamentosUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Pensamentos;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD2F5AAA201E21ED000A1D9E /* Build configuration list for PBXProject "Pensamentos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD2F5AD8201E21EE000A1D9E /* Debug */,
+				CD2F5AD9201E21EE000A1D9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD2F5ADA201E21EE000A1D9E /* Build configuration list for PBXNativeTarget "Pensamentos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD2F5ADB201E21EE000A1D9E /* Debug */,
+				CD2F5ADC201E21EE000A1D9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD2F5ADD201E21EE000A1D9E /* Build configuration list for PBXNativeTarget "PensamentosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD2F5ADE201E21EE000A1D9E /* Debug */,
+				CD2F5ADF201E21EE000A1D9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD2F5AE0201E21EE000A1D9E /* Build configuration list for PBXNativeTarget "PensamentosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD2F5AE1201E21EE000A1D9E /* Debug */,
+				CD2F5AE2201E21EE000A1D9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CD2F5AB9201E21EE000A1D9E /* Pensamentos.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CD2F5ABA201E21EE000A1D9E /* Pensamentos.xcdatamodel */,
+			);
+			currentVersion = CD2F5ABA201E21EE000A1D9E /* Pensamentos.xcdatamodel */;
+			path = Pensamentos.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CD2F5AA7201E21ED000A1D9E /* Project object */;
+}
